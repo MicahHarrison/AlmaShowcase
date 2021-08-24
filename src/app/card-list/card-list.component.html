@@ -1,0 +1,5 @@
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
+  <div *ngFor="let art of arts" fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+    <app-card [art]="art"></app-card>
+  </div>
+</div>
