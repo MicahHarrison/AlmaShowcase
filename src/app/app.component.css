@@ -9,18 +9,22 @@
   position: relative;
   margin: 0 auto;
 }
-
+.commisions {
+  background-color: #cccccc;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
 html,body
 {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
   overflow-x: hidden;
 }
 
 i {
-  color: blue;
+  color: black;
   position: relative;
   z-index: 9;
 
@@ -28,7 +32,7 @@ i {
 
 .arrow {
   position: absolute;
-  left:50%;
+  left: 50%;
   top: 80%;
 }
 
@@ -36,6 +40,60 @@ i {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+.home {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../assets/sparkle_bg.jpg);
+  background-color: #cccccc;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  position: relative;
+}
+.navmenu {
+  width: 40%;
+  height: 50%;
+  left: 30%;
+  top: 25%;
+  bottom: 25%;
+  position: absolute;
+}
+.btn1 {
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  outline: none;
+  background-color: lightblue;
+  border: black solid 2px;
+}
+.navbuttons {
+  width: 60%;
+  height: 70%;
+  left: 20%;
+  top: 15%;
+  bottom: 15%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.links {
+  align-items: center;
+  width: 60%;
+  height: 10%;
+  left: 20%;
+  top: 85%;
+  bottom: 15%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 @keyframes bounce {

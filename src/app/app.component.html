@@ -14,11 +14,39 @@
     <div class="arrow bounce">
         <button mat-icon-button (click)="scroll(target)">
           <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i>
-  <!--          <mat-icon>favorite</mat-icon>-->
+          <!--<mat-icon>favorite</mat-icon>-->
         </button>
     </div>
+
   </div>
-  <app-card-list></app-card-list>
-  <div #target>Your target</div>
+  <div class="home">
+    <div class="navmenu">
+      <div class="navbuttons">
+        <button mat-button class="btn1">
+          This is a button
+        </button>
+        <button mat-button class="btn1">
+          This is a button
+        </button>
+        <button mat-button class="btn1">
+          This is a button
+        </button>
+      </div>
+      <div class="links">
+        <button mat-button>
+          <i class="fa fa-twitch fa-2x" aria-hidden="true"></i>
+        </button>
+        <button mat-button>
+          <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+        </button>
+        <button mat-button>
+          <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div #target class="commisions">
+  <app-card-list [arts]="arts"></app-card-list>
+  </div>
 </body>
 </html>

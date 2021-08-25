@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {CardComponent} from "../card/card.component";
+import { Component, OnInit, Input } from '@angular/core';
 import {ArtComponent} from "../art";
 
 @Component({
@@ -9,18 +8,10 @@ import {ArtComponent} from "../art";
 })
 export class CardListComponent implements OnInit {
 
-  arts: ArtComponent[] = [];
+  @Input() arts!: ArtComponent[];
   constructor() { }
 
   ngOnInit(): void {
-    this.arts.push(new ArtComponent("this", "temp"))
-    this.arts.push(new ArtComponent("this", "temp"))
-    this.arts.push(new ArtComponent("this", "temp"))
-    this.arts.push(new ArtComponent("this", "temp"))
-    this.arts.push(new ArtComponent("this", "temp"))
-    this.arts.push(new ArtComponent("this", "temp"))
-    this.arts.push(new ArtComponent("this", "temp"))
-    this.arts.push(new ArtComponent("this", "temp"))
   }
 
 }
