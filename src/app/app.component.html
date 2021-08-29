@@ -86,7 +86,7 @@
     <div class="commisionscontent">
       <h1 class="aboutmeheader"> Commissions </h1>
       <app-commission [commissions]="chibis" price="10" category="Icons"></app-commission>
-      <app-commission [commissions]="icons" price="12-15" category="Chibis"></app-commission>
+      <app-commission [commissions]="icons" price="12 - 15" category="Chibis"></app-commission>
       <app-commission [commissions]="busts" price="15" category="Bust"></app-commission>
       <app-commission [commissions]="waists" price="25" category="Halfbody/Waist"></app-commission>
       <app-commission [commissions]="fullbodys" price="40" category="Full Body"></app-commission>
@@ -95,7 +95,7 @@
   <div #target class="commisions">
     <div class="commisionscontent">
       <h1 class="aboutmeheader"> Gallery </h1>
-      <app-gallery-card-list [arts]="galleryCards"></app-gallery-card-list>
+      <app-gallery-card-masonry [masonryOptions]="masonryOptions" [arts]="galleryCards"></app-gallery-card-masonry>
     </div>
   </div>
 </body>

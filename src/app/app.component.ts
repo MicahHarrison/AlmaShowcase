@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {ArtComponent} from "./art";
+import {NgxMasonryOptions} from "ngx-masonry";
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,11 @@ export class AppComponent{
   fullbody = "fullbody"
 
   galleryCards: ArtComponent[] = [];
+
+  public masonryOptions: NgxMasonryOptions = {
+    gutter: 20,
+  };
+
   constructor() {
     this.galleryCards.push(new ArtComponent(this.chibi, "sugar bunny", "temp", "https://media.discordapp.net/attachments/856575891454820412/865663840111689758/kisummi_bg.png?width=338&height=676", true))
     this.galleryCards.push(new ArtComponent(this.chibi, "unicorn gun", "temp", "https://cdn.discordapp.com/attachments/856575891454820412/870834496155574322/sugar_example.png", true))

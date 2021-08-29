@@ -10,8 +10,9 @@ import { CardListComponent } from './card-list/card-list.component';
 import { CardComponent } from './card/card.component';
 import {MatIconModule} from "@angular/material/icon";
 import { CommissionComponent } from './commission/commission.component';
+import { NgxMasonryModule } from 'ngx-masonry';
 import { GalleryCardComponent } from './gallery-card/gallery-card.component';
-import { GalleryCardListComponent } from './gallery-card-list/gallery-card-list.component';
+import { GalleryCardMasonryComponent } from './gallery-card-masonry/gallery-card-masonry.component';
 
 
 
@@ -22,7 +23,7 @@ import { GalleryCardListComponent } from './gallery-card-list/gallery-card-list.
     CardComponent,
     CommissionComponent,
     GalleryCardComponent,
-    GalleryCardListComponent,
+    GalleryCardMasonryComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +33,7 @@ import { GalleryCardListComponent } from './gallery-card-list/gallery-card-list.
     MatToolbarModule,
     FlexLayoutModule,
     MatIconModule,
+    NgxMasonryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
