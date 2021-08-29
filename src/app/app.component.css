@@ -12,9 +12,69 @@
 .commisions {
   background-color: #cccccc;
   width: 100%;
-  height: 100%;
   position: relative;
   margin: 0 auto;
+}
+.commisionscontent {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+.aboutme {
+  background-color: #dde6d5;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10%;
+  overflow: auto;
+}
+.aboutcontent {
+  width: 80%;
+  height: 80%;
+  display: inline-block;
+}
+.aboutmeheader {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.content2 {
+  height: 80%;
+  width: 100%;
+}
+.aboutimage {
+  width: 30%;
+  height: 80%;
+  border: black solid 2px;
+  margin-left: 10%;
+  float: left;
+}
+.aboutmessage {
+  float: right;
+  margin-right: 5%;
+  display: inline-block;
+  width: 40%;
+  overflow: auto;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.5);
+}
+.message {
+  padding: 20px;
+  overflow: hidden;
+}
+.links2 {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.email {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
 }
 html,body
 {
@@ -27,7 +87,6 @@ i {
   color: black;
   position: relative;
   z-index: 9;
-
 }
 
 .arrow {
@@ -105,5 +164,21 @@ i {
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+@media screen and (max-width: 1200px){
+
+  .aboutimage {
+    float:none;
+    display:block;
+    margin-left: 0%;
+    width: 100%;
+    height: 70%;
+  }
+  .aboutmessage{
+    float:none;
+    display:block;
+    width:100%;
+    margin-right: 0%;
   }
 }

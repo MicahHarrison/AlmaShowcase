@@ -1,5 +1,5 @@
 export class ArtComponent {
 
-  constructor(public title: string, public description: string) { }
+  constructor(public category: string, public title: String, public description: string, public img: string, public featured: Boolean) { }
 
 }
