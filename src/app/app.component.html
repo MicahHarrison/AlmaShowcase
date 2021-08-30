@@ -10,93 +10,16 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <div class="content">
-    <div class="arrow bounce">
-        <button mat-icon-button (click)="scroll(target)" class="arrowalign">
-          <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i>
-        </button>
-    </div>
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="container">
+    <ul class="nav navbar-nav" routerLinkActive="active">
+      <li class="nav-item"><a class="nav-link" routerLink="/home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/commission">Commisions</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/gallery">Gallery</a></li>
+    </ul>
   </div>
-  <div class="home">
-    <div class="navmenu">
-      <div class="navbuttons">
-          <button mat-button class="btn1">
-            About
-          </button>
-          <button mat-button class="btn1">
-            Gallery
-          </button>
-          <button mat-button class="btn1">
-            Commissions
-          </button>
-          <div class="links">
-            <button mat-button>
-              <i class="fa fa-twitch fa-2x" aria-hidden="true"></i>
-            </button>
-            <button mat-button>
-              <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-            </button>
-            <button mat-button>
-              <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-            </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div #aboutme class="aboutme">
-    <div class="aboutcontent">
-      <h1 class="aboutmeheader"> About Me!!!</h1>
-      <div class="content2">
-        <img class="aboutimage" src="assets/alma.jpg">
-        <div class="aboutmessage">
-          <div class="message">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Duis interdum, tortor a bibendum fermentum, mauris nibh
-              sollicitudin nisl, a gravida nisi est eget urna. Mauris
-              varius purus eget arcu imperdiet, sit amet finibus velit
-              posuere. In ipsum ante, tincidunt eget ornare sit amet,
-              bibendum non augue. Aenean feugiat ac augue id dapibus. Nullam
-              ut turpis quam. Suspendisse in tortor a elit tempus convallis
-              nec sit amet orci. Proin tempor quam vitae purus commodo commodo.
-              Duis tempus id orci eget mattis. Nullam et bibendum ipsum.
-              Donec at tellus nunc. Aenean metus enim, ultrices ac metus
-              eu, tempus efficitur eros. Cras rutrum pretium quam, eget
-              eleifend metus.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="links2">
-      <button mat-button>
-        <i class="fa fa-twitch fa-2x" aria-hidden="true"></i>
-      </button>
-      <button mat-button>
-        <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-      </button>
-      <button mat-button>
-        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-      </button>
-      <div class="email">
-        <p>Contact me?</p>
-        <p>almanzobean@gmail.com</p>
-      </div>
-    </div>
-  </div>
-  <div #target class="commisions">
-    <div class="commisionscontent">
-      <h1 class="aboutmeheader"> Commissions </h1>
-      <app-commission [commissions]="chibis" price="10" category="Icons"></app-commission>
-      <app-commission [commissions]="icons" price="12 - 15" category="Chibis"></app-commission>
-      <app-commission [commissions]="busts" price="15" category="Bust"></app-commission>
-      <app-commission [commissions]="waists" price="25" category="Halfbody/Waist"></app-commission>
-      <app-commission [commissions]="fullbodys" price="40" category="Full Body"></app-commission>
-    </div>
-  </div>
-  <div #target class="commisions">
-    <div class="commisionscontent">
-      <h1 class="aboutmeheader"> Gallery </h1>
-      <app-gallery-card-masonry [masonryOptions]="masonryOptions" [arts]="galleryCards"></app-gallery-card-masonry>
-    </div>
-  </div>
+</nav>
+<router-outlet></router-outlet>
 </body>
 </html>

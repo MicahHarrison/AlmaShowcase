@@ -1,0 +1,26 @@
+<div class="content">
+  <div class="arrow bounce">
+    <button mat-icon-button (click)="scroll(target)" class="arrowalign">
+      <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>
+<div #target class="home">
+  <div class="navmenu">
+    <div class="navbuttons">
+      <router-outlet></router-outlet>
+      <button mat-button class="btn1" routerLink="/about">
+        About
+      </button>
+      <button mat-button class="btn1" routerLink="/gallery">
+        Gallery
+      </button>
+      <button mat-button class="btn1" routerLink="/commission">
+        Commissions
+      </button>
+      <div class="links">
+        <app-links></app-links>
+      </div>
+    </div>
+  </div>
+</div>

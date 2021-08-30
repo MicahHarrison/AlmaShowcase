@@ -1,0 +1,32 @@
+.commisions {
+  background-color: #cccccc;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.commisionscontent {
+  margin: auto;
+  width: 70%;
+  padding: 10% 10% 10%;
+}
+
+.aboutmeheader {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.included {
+  text-align: center;
+  list-style-position: inside;
+}
+.customIndent1 {
+  margin-left: -60px;
+}
+.customIndent2 {
+  margin-left: -45px;
+}
+.customIndent2 {
+  margin-left: -30px;
+}

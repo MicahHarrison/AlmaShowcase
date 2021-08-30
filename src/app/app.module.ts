@@ -13,6 +13,13 @@ import { CommissionComponent } from './commission/commission.component';
 import { NgxMasonryModule } from 'ngx-masonry';
 import { GalleryCardComponent } from './gallery-card/gallery-card.component';
 import { GalleryCardMasonryComponent } from './gallery-card-masonry/gallery-card-masonry.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LinksComponent } from './links/links.component';
+import { CommissionspageComponent } from './commissionspage/commissionspage.component';
+import { appRoutingModule } from './app.routing';
+import { HomepageComponent } from './homepage/homepage.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { GallerypageComponent } from './gallerypage/gallerypage.component';
 
 
 
@@ -23,7 +30,12 @@ import { GalleryCardMasonryComponent } from './gallery-card-masonry/gallery-card
     CardComponent,
     CommissionComponent,
     GalleryCardComponent,
-    GalleryCardMasonryComponent
+    GalleryCardMasonryComponent,
+    LinksComponent,
+    CommissionspageComponent,
+    HomepageComponent,
+    AboutmeComponent,
+    GallerypageComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +45,9 @@ import { GalleryCardMasonryComponent } from './gallery-card-masonry/gallery-card
     MatToolbarModule,
     FlexLayoutModule,
     MatIconModule,
-    NgxMasonryModule
+    NgxMasonryModule,
+    ReactiveFormsModule,
+    appRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

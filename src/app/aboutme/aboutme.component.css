@@ -1,0 +1,74 @@
+.aboutme {
+  background-color: #dde6d5;
+  position: relative;
+  padding: 10% 10% 10%;
+  min-height: 100%;
+}
+.aboutcontent {
+  height: 80%;
+  display: inline-block;
+}
+.aboutmeheader {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.content2 {
+  height: 80%;
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+}
+.aboutimage {
+  width: 30%;
+  height: 80%;
+  border: black solid 2px;
+  margin-left: 10%;
+  float: left;
+}
+.aboutmessage {
+  float: right;
+  margin-right: 5%;
+  display: inline-block;
+  width: 40%;
+  overflow: auto;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.5);
+}
+.message {
+  padding: 20px;
+  overflow: hidden;
+}
+.links2 {
+  padding-top: 20px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.email {
+  padding-top: 20px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+
+  .aboutimage {
+    float:none;
+    display:block;
+    height: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  .aboutmessage{
+    float:none;
+    display:block;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+  }
+}
