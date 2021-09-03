@@ -1,12 +1,12 @@
 .container {
   position: relative;
-
 }
 
 .image {
   display: block;
   height: 100%;
   width: 100%;
+  border-radius: 15px;
 }
 
 .overlay {
@@ -18,20 +18,28 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .5s ease-in-out;
   background-color: blueviolet;
+  border-radius: 15px;
 }
 
 .container:hover .overlay {
   opacity: .50;
+  transform: scale(1.05);
 }
+
 .container:hover .text {
-  opacity: 1;
-  transition: .5s ease;
+  transform: scale(1.05);
+  display: inline-block;
+  cursor: pointer;
 }
+.container:hover .img {
+  transform: scale(1.05);
+}
+
 .text {
-  transition: .5s ease;
-  opacity: 0;
+  transition: .5s ease-in-out;
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;

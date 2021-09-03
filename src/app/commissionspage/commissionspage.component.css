@@ -4,18 +4,10 @@
   position: relative;
   margin: 0 auto;
 }
-
 .commisionscontent {
   margin: auto;
   width: 70%;
   padding: 10% 10% 10%;
-}
-
-.aboutmeheader {
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 50px;
 }
 .included {
   text-align: center;

@@ -20,6 +20,7 @@ import { appRoutingModule } from './app.routing';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { GallerypageComponent } from './gallerypage/gallerypage.component';
+import { PageheaderComponent } from './pageheader/pageheader.component';
 
 
 
@@ -35,7 +36,8 @@ import { GallerypageComponent } from './gallerypage/gallerypage.component';
     CommissionspageComponent,
     HomepageComponent,
     AboutmeComponent,
-    GallerypageComponent
+    GallerypageComponent,
+    PageheaderComponent
   ],
   imports: [
     BrowserModule,

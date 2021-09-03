@@ -14,4 +14,7 @@ export class GalleryCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public temp(): void {
+    console.log("1")
+  }
 }
