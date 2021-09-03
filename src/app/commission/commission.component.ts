@@ -8,7 +8,7 @@ import {ArtComponent} from "../art";
 })
 export class CommissionComponent implements OnInit {
 
-  @Input() commissions!: ArtComponent[];
+  @Input() commissions!: Array<object>;
   @Input() price!: string;
   @Input() category!: string;
   constructor() { }

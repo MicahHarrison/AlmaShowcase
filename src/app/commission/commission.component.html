@@ -1,4 +1,18 @@
-<div class="commisionline">
-  <h1>{{category}} ---- ${{price}}</h1>
-  <app-card-list [arts]="commissions"></app-card-list>
+<h1 class="commishheader">{{category}} ---- ${{price}}</h1>
+<div class="margin-auto demo-div box-shadow" [ngStyle]="{'width':'100%'}">
+<!--  <app-card-list [arts]="commissions"></app-card-list>-->
+  <ng-image-slider class="image"
+    [images]="commissions"
+    [infinite]="true"
+    [imagePopup]="true"
+    [showArrow]="true"
+    [autoSlide]="true"
+    [slideImage]=1
+    [animationSpeed]=5
+    [manageImageRatio]="true"
+    [paginationShow]="false"
+    [imageSize]="{width: '33%', height: '33%'}"
+    ></ng-image-slider>
 </div>
+
+

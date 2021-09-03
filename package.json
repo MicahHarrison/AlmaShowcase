@@ -24,6 +24,7 @@
     "font-awesome": "^4.7.0",
     "fs": "0.0.1-security",
     "masonry-layout": "^4.2.2",
+    "ng-image-slider": "^2.8.0",
     "ngx-masonry": "^11.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",

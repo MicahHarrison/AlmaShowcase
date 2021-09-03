@@ -21,6 +21,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { GallerypageComponent } from './gallerypage/gallerypage.component';
 import { PageheaderComponent } from './pageheader/pageheader.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 
@@ -49,7 +50,8 @@ import { PageheaderComponent } from './pageheader/pageheader.component';
     MatIconModule,
     NgxMasonryModule,
     ReactiveFormsModule,
-    appRoutingModule
+    appRoutingModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

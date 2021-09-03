@@ -11,11 +11,11 @@ import {NgxMasonryOptions} from "ngx-masonry";
 export class CommissionspageComponent implements OnInit {
 
   title = 'AlmaShowcase';
-  icons: ArtComponent[] = [];
-  chibis: ArtComponent[] = [];
-  busts: ArtComponent[] = [];
-  waists: ArtComponent[] = [];
-  fullbodys: ArtComponent[] = [];
+  icons: Array<object> = [];
+  chibis: Array<object> = [];
+  busts: Array<object> = [];
+  waists: Array<object> = [];
+  fullbodys: Array<object> = [];
   testFolder: String = './tests/';
 
   chibi = "chibi"
@@ -72,27 +72,55 @@ export class CommissionspageComponent implements OnInit {
     this.galleryCards.push(new ArtComponent(this.fullbody, "monkey", "temp", "https://media.discordapp.net/attachments/856575815231733760/856579220602880020/hag-vander.png?width=353&height=676", false))
 
     for (const art of this.galleryCards) {
-      if (art.featured) {
-        switch (art.category) {
-          case this.chibi:
-            this.chibis.push(art)
-            break;
-          case this.icon:
-            this.icons.push(art)
-            break;
-          case this.bust:
-            this.busts.push(art)
-            break;
-          case this.waist:
-            this.waists.push(art)
-            break;
-          case this.fullbody:
-            this.fullbodys.push(art)
-            break;
-          default:
-            console.log("Could not identify category, Skipping...");
-            break;
-        }
+      switch (art.category) {
+        case this.chibi:
+          this.chibis.push(
+            {
+              "image": art.img,
+              "thumbImage": art.img,
+              //"title": "Image Fourteen"
+            }
+          )
+          break;
+        case this.icon:
+          this.icons.push(
+            {
+              "image": art.img,
+              "thumbImage": art.img,
+              //"title": "Image Fourteen"
+            }
+          )
+          break;
+        case this.bust:
+          this.busts.push(
+            {
+              "image": art.img,
+              "thumbImage": art.img,
+              //"title": "Image Fourteen"
+            }
+          )
+          break;
+        case this.waist:
+          this.waists.push(
+            {
+              "image": art.img,
+              "thumbImage": art.img,
+              //"title": "Image Fourteen"
+            }
+          )
+          break;
+        case this.fullbody:
+          this.fullbodys.push(
+            {
+              "image": art.img,
+              "thumbImage": art.img,
+              //"title": "Image Fourteen"
+            }
+          )
+          break;
+        default:
+          console.log("Could not identify category, Skipping...");
+          break;
       }
       console.log(art); // prints values: 10, 20, 30, 40
     }
